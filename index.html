@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="app.js" defer></script>
+    <title>Milionár Quiz</title>
+    <link rel="stylesheet" href="dizajn.css">
 </head>
 <body>
-    
+
+    <h1>Milionár Quiz</h1>
+
+    <div id="score-box">Počet peňazí: 0€</div>
+    <div id="timer-box"></div>
+
+
+    <div id="questions-container"></div>
+
+    <button id="submit-btn">Submit</button>
+    <button id="restart-btn">ZNOVA</button>
+    <button id="half-btn" onclick="useHalf()">50 : 50</button>
+   <br> <button id="restart-btn" style="display: none;" class="danger" onclick="restart()">Restart</button>
+
+    <script src="app.js"></script>
 </body>
 </html>
